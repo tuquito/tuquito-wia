@@ -1,0 +1,11 @@
+tuquito-wia (1.2-2) lucid; urgency=low
+
+  * Version para lucid - tuquito 4
+
+ -- Mario Colque <mario@tuquito.org.ar>  Sun, 11 Apr 2010 12:40:40 -0300
+
+tuquito-wia (1.2-1) karmic; urgency=low
+
+  * Versión inicial
+
+ -- Mario Colque <mario@tuquito.org.ar>  Fri, 26 Mar 2010 23:24:17 -0300

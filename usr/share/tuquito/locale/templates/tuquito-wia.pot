@@ -1,0 +1,81 @@
+# Traducciones para Tuquito WIA
+# Copyright (C) 2010 - Tuquito Team!
+# This file is distributed under the same license as the Aptito package.
+# Mario Colque <mario@tuquito.org.ar>, 2010.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: tuquito-wia 1.2\n"
+"Report-Msgid-Bugs-To: mario@tuquito.org.ar\n"
+"POT-Creation-Date: 2010-03-26 23:07-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Mario Colque <mario@tuquito.org.ar>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:39
+msgid "Cat1"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:39
+msgid "Cat2"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:39
+msgid "Cat3"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:39
+msgid "Cat4"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:39
+msgid "Cat5"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:39
+msgid "Cat6"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:39
+msgid "Cat7"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:39
+msgid "Cat8"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:39
+msgid "Cat9"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:39
+msgid "Cat10"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:39
+msgid "Cat11"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:39
+msgid "Cat12"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:78
+msgid "Nueva Aplicacion Instalada"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:109
+msgid "Puedes encontrar esta nueva aplicacion en:"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:112
+msgid "Aplicacion desinstalada"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:112
+msgid "Se encontraron aplicaciones desinstaladas"
+msgstr ""
