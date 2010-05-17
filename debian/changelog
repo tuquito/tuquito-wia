@@ -1,3 +1,11 @@
+tuquito-wia (1.2-3) lucid; urgency=low
+
+  * Versión optimizada para funcionar de forma oculta
+  * Implementacion de i18n
+  * cambios en archivos del sistema
+
+ -- Mario Colque <mario@tuquito.org.ar>  Mon, 17 May 2010 15:15:31 -0300
+
 tuquito-wia (1.2-2) lucid; urgency=low
 
   * Version para lucid - tuquito 4
