@@ -1,8 +1,7 @@
 [Desktop Entry]
 Name=Where is Application?
 Comment=Aplicación que notifica en que menú se encuentra una nueva aplicación instalada
-Comment[en]=Aplicación que notifica en que menú se encuentra una nueva aplicación instalada
 Type=Application
-Exec=tuquito-wia
+Exec=/usr/lib/tuquito/tuquito-wia/tuquito-wia.py
 Terminal=false
 Categories=Utility;

@@ -1,3 +1,10 @@
+tuquito-wia (1.2-3.1) lucid; urgency=low
+
+  * eliminado archivo de /usr/bin
+  * inicio desde dir local de la app
+
+ -- Mario Colque <mario@tuquito.org.ar>  Mon, 31 May 2010 00:10:59 -0300
+
 tuquito-wia (1.2-3) lucid; urgency=low
 
   * Versión optimizada para funcionar de forma oculta

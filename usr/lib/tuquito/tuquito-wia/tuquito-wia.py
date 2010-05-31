@@ -39,90 +39,92 @@ icondir = ['', '/usr/share/pixmaps/','/usr/share/icons/','/usr/share/icons/hicol
 categories = [_('Cat1'),'Utility'],[_('Cat2'),'Education'],[_('Cat3'),'Game'],[_('Cat4'),'Graphics'],[_('Cat5'),'Network'],[_('Cat6'),'Office'],[_('Cat7'),'Development'],[_('Cat8'),'AudioVideo'],[_('Cat9'),'Settings'],[_('Cat10'),'System'],[_('Cat11'),'System;Settings'],[_('Cat12'),'Other']
 
 class SearchApp:
-    def __init__(self):
-	self.apps = []
-	self.appsold = []
+	def __init__(self):
+		self.apps = []
+		self.appsold = []
 
-    def searchIn(self, path):
-	global icondir, icontype, categories
-	for filename in os.listdir(path):
-		if os.path.isfile(path + filename): 
-			self.apps.append(str(path + filename))
-	selez = []
+	def searchIn(self, path):
+		global icondir, icontype, categories
+		for filename in os.listdir(path):
+			if os.path.isfile(path + filename):
+				self.apps.append(str(path + filename))
+		selez = []
 
-	if len(self.apps) != len(self.appsold):
-		if len(self.appsold) > 0:
-			x = 0
-			while x < len(self.apps):
-				nm = ''.join(self.appsold)
-				if nm.find(self.apps[x]) == -1:
-					selez.append('I|' + self.apps[x])
-				x += 1
-			x = 0
-			while x < len(self.appsold):
-				nm = ''.join(self.apps)
-				if nm.find(self.appsold[x]) == -1:
-					selez.append('E|' + self.appsold[x])
-				x += 1
-	self.appsold = []
-	self.apps = []
+		if len(self.apps) != len(self.appsold):
+			if len(self.appsold) > 0:
+				x = 0
+				while x < len(self.apps):
+					nm = ''.join(self.appsold)
+					if nm.find(self.apps[x]) == -1:
+						selez.append('I|' + self.apps[x])
+					x += 1
+				x = 0
+				while x < len(self.appold):
+					nm = ''.join(self.apps)
+					if nm.find(self.appsold[x]) == -1:
+						selez.append('E|' + self.appsold[x])
+					x += 1
+		self.appsold = []
+		self.apps = []
 
-	for filename in os.listdir(path):
-		if os.path.isfile(path + filename):
-			self.appsold.append(str(path + filename))
-	for sele in selez:
-		frase = sele.split('|')
-		sel = frase[1]
+		for filename in os.listdir(path):
+			if os.path.isfile(path + filename):
+				self.appsold.append(str(path + filename))
+		for sele in selez:
+			frase = sele.split('|')
+			sel = frase[1]
 
-		if frase[0] == 'I':
-			name = _('Nueva Aplicacion Instalada')
-			catname = ''
-			image = '/usr/lib/tuquito/tuquito-wia/wia-add.png'
-			f = open(sel,'r')
-			for l in f.readlines():
-				s = l.split('=')
+			if frase[0] == 'I':
+				name = _('Nueva Aplicacion Instalada')
+				catname = ''
+				image = '/usr/lib/tuquito/tuquito-wia/wia-add.png'
+				f = open(sel,'r')
+				for l in f.readlines():
+					s = l.split('=')
 
-				if (s[0].upper() == 'NAME') or (s[0].upper() == 'NAME[' + lang2.upper() + ']') or (s[0].upper() == 'NAME[' + lang.upper() + ']'):
-					name = s[1].strip()
+					if (s[0].upper() == 'NAME') or (s[0].upper() == 'NAME[' + lang2.upper() + ']') or (s[0].upper() == 'NAME[' + lang.upper() + ']'):
+						name = s[1].strip()
 
-				if s[0].upper() == 'ICON':
-					image = s[1].strip()
+					if s[0].upper() == 'ICON':
+						image = s[1].strip()
 
-				if s[0].upper() == 'CATEGORIES':
-					submenu = s[1].strip()
-					for cat in categories:
-						if submenu.find(cat[1]) != -1:
-							catname = cat[0]
-			f.close()
+					if s[0].upper() == 'CATEGORIES':
+						submenu = s[1].strip()
+						for cat in categories:
+							if submenu.find(cat[1]) != -1:
+								catname = cat[0]
+				f.close()
 
-			if image.find('.') == -1:
-				for dr in icondir:
-					for ic in icontype:
-						if os.path.exists(dr + image + ic) == True:
-							image = dr + image + ic
+				if image.find('.') == -1:
+					for dr in icondir:
+						for ic in icontype:
+							if os.path.exists(dr + image + ic) == True:
+								image = dr + image + ic
+								break
+				else:
+					for dr in icondir:
+						if os.path.exists(dr + image) == True:
+							image = dr + image
 							break
-			else:
-				for dr in icondir:
-					if os.path.exists(dr + image) == True:
-						image = dr + image
-						break
-			notify(name, _('Puedes encontrar esta nueva aplicacion en:') + '\n' + catname, image)
+				notify(name, _('Puedes encontrar esta nueva aplicacion en:') + '\n' + catname, image)
 
-		if frase[0] == 'E':
-			notify(_('Aplicacion desinstalada'), _('Se encontraron aplicaciones desinstaladas'), '/usr/lib/tuquito/tuquito-wia/wia-remove.png')
+			if frase[0] == 'E':
+				notify(_('Aplicacion desinstalada'), _('Se encontraron aplicaciones desinstaladas'), '/usr/lib/tuquito/tuquito-wia/wia-remove.png')
 
-		pygame.mixer.music.play()
+			pygame.mixer.music.play()
 
 class Tempo:
-    def get_time(self):
-	return self.time
-    def __init__(self):
-	self.time = 0
-    def run(self):
-	self.time +=1
-	if self.time > 50:
+	def get_time(self):
+		return self.time
+
+	def __init__(self):
 		self.time = 0
-	time.sleep(0.1)
+
+	def run(self):
+		self.time += 1
+		if self.time > 50:
+			self.time = 0
+		time.sleep(0.1)
 
 def notify(top, sub, image):
 	n = pynotify.Notification(top, sub, image)
