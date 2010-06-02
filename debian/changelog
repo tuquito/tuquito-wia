@@ -1,3 +1,9 @@
+tuquito-wia (1.2-3.2) lucid; urgency=low
+
+  * agregado idioma pt
+
+ -- Mario Colque <mario@tuquito.org.ar>  Wed, 02 Jun 2010 14:25:33 -0300
+
 tuquito-wia (1.2-3.1) lucid; urgency=low
 
   * eliminado archivo de /usr/bin

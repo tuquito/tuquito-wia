@@ -18,64 +18,64 @@ msgstr ""
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
 msgid "Applications » Accessories"
-msgstr ""
+msgstr "Applicazioni » Accessori"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
 msgid "Applications » Education"
-msgstr ""
+msgstr "Applicazioni » Istruzione"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
 msgid "Applications » Games"
-msgstr ""
+msgstr "Applicazioni » Giochi"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
 msgid "Applications » Graphics"
-msgstr ""
+msgstr "Applicazioni » Grafica"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
 msgid "Applications » Internet"
-msgstr ""
+msgstr "Applicazioni » Internet"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
 msgid "Applications » Office"
-msgstr ""
+msgstr "Applicazioni » Office"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
 msgid "Applications » Programming"
-msgstr ""
+msgstr "Applicazioni » Programmazione"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
 msgid "Applications » Sound & Video"
-msgstr ""
+msgstr "Applicazioni » Audio e video"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
 msgid "System » Settings"
-msgstr ""
+msgstr "Sistema » Preferenze"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
 msgid "Applications » System Tools"
-msgstr ""
+msgstr "Applicazioni » Strumenti di sistema"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
 msgid "System » Administration"
-msgstr ""
+msgstr "Sistema » Amministrazione"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
 msgid "Applications » Others"
-msgstr ""
+msgstr "Applicazioni » Altre"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:76
 msgid "New Installed Application"
-msgstr ""
+msgstr "Nuova applicazione installata"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:107
 msgid "This new application can be found at:"
-msgstr ""
+msgstr "Puoi trovare l'applicazione installata in:"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:110
 msgid "Apps deleted found"
-msgstr ""
+msgstr "Applicazione rimossa"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:110
 msgid "Tuquito confirm that application was deleted"
-msgstr ""
+msgstr "Tuquito conferma la rimozione del software"

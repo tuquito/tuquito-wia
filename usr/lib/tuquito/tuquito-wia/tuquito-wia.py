@@ -20,9 +20,7 @@
  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 """
 
-import gtk
-import pygtk, pygame
-import os, time, pynotify, gettext
+import pygame, os, time, pynotify, gettext
 
 # i18n
 gettext.install('tuquito-wia', '/usr/share/tuquito/locale')
@@ -36,7 +34,7 @@ lang = os.environ['LANG'][:5]
 lang2 = lang[:2]
 icontype = ['.xpm','.png','.svg']
 icondir = ['', '/usr/share/pixmaps/','/usr/share/icons/','/usr/share/icons/hicolor/scalable/apps/','/usr/share/icons/hicolor/48x48/apps/','/usr/share/icons/hicolor/22x22/apps/','/usr/share/icons/hicolor/32x32/apps/','/usr/share/icons/hicolor/16x16/apps/','/usr/share/app-install/icons/']
-categories = [_('Cat1'),'Utility'],[_('Cat2'),'Education'],[_('Cat3'),'Game'],[_('Cat4'),'Graphics'],[_('Cat5'),'Network'],[_('Cat6'),'Office'],[_('Cat7'),'Development'],[_('Cat8'),'AudioVideo'],[_('Cat9'),'Settings'],[_('Cat10'),'System'],[_('Cat11'),'System;Settings'],[_('Cat12'),'Other']
+categories = [_('Applications » Accessories'),'Utility'],[_('Applications » Education'),'Education'],[_('Applications » Games'),'Game'],[_('Applications » Graphics'),'Graphics'],[_('Applications » Internet'),'Network'],[_('Applications » Office'),'Office'],[_('Applications » Programming'),'Development'],[_('Applications » Sound & Video'),'AudioVideo'],[_('System » Settings'),'Settings'],[_('Applications » System Tools'),'System'],[_('System » Administration'),'System;Settings'],[_('Applications » Others'),'Other']
 
 class SearchApp:
 	def __init__(self):
@@ -75,7 +73,7 @@ class SearchApp:
 			sel = frase[1]
 
 			if frase[0] == 'I':
-				name = _('Nueva Aplicacion Instalada')
+				name = _('New Installed Application')
 				catname = ''
 				image = '/usr/lib/tuquito/tuquito-wia/wia-add.png'
 				f = open(sel,'r')
@@ -106,10 +104,10 @@ class SearchApp:
 						if os.path.exists(dr + image) == True:
 							image = dr + image
 							break
-				notify(name, _('Puedes encontrar esta nueva aplicacion en:') + '\n' + catname, image)
+				notify(name, _('This new application can be found at:') + '\n' + catname, image)
 
 			if frase[0] == 'E':
-				notify(_('Aplicacion desinstalada'), _('Se encontraron aplicaciones desinstaladas'), '/usr/lib/tuquito/tuquito-wia/wia-remove.png')
+				notify(_('Apps deleted found'), _('Tuquito confirm that application was deleted'), '/usr/lib/tuquito/tuquito-wia/wia-remove.png')
 
 			pygame.mixer.music.play()
 
