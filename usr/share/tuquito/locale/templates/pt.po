@@ -3,18 +3,18 @@
 # This file is distributed under the same license as the tuquito-wia package.
 # Mario Colque <mario@tuquito.org.ar>, 2010.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Tuquito wia 1.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-31 18:41-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2010-06-14 13:11-0300\n"
+"Last-Translator: Carlos Pessoa de Araújo <carlosfelipe@tuquito.org.ar>\n"
+"Language-Team: Portuguese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
 msgid "Applications » Accessories"
@@ -22,7 +22,7 @@ msgstr "Aplicativos » Acessórios"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
 msgid "Applications » Education"
-msgstr "Aplicativos » Educação"
+msgstr "Aplicativos » Educativo"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
 msgid "Applications » Games"
@@ -54,7 +54,7 @@ msgstr "Sistema » Preferências"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
 msgid "Applications » System Tools"
-msgstr "Aplicativos » Ferramentas do sistema"
+msgstr "Aplicativos » Sistema"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
 msgid "System » Administration"
@@ -66,16 +66,16 @@ msgstr "Aplicativos » Outros"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:76
 msgid "New Installed Application"
-msgstr "Novo Aplicativo Instalado"
+msgstr "Novo aplicativo instalado"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:107
 msgid "This new application can be found at:"
-msgstr "O novo aplicativo pode ser encontrado em:"
+msgstr "O novo aplicativo encontra-se em:"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:110
 msgid "Apps deleted found"
-msgstr "O aplicativo foi desinstalado"
+msgstr "Aplicativo removido"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:110
 msgid "Tuquito confirm that application was deleted"
-msgstr "O sistema confirma que o aplicativo foi desinstalado"
+msgstr "Tuquito confirma a remoção do aplicativo"
