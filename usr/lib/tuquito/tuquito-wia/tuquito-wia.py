@@ -34,7 +34,7 @@ lang = os.environ['LANG'][:5]
 lang2 = lang[:2]
 icontype = ['.xpm','.png','.svg']
 icondir = ['', '/usr/share/pixmaps/','/usr/share/icons/','/usr/share/icons/hicolor/scalable/apps/','/usr/share/icons/hicolor/48x48/apps/','/usr/share/icons/hicolor/22x22/apps/','/usr/share/icons/hicolor/32x32/apps/','/usr/share/icons/hicolor/16x16/apps/','/usr/share/app-install/icons/']
-categories = [_('Applications » Accessories'),'Utility'],[_('Applications » Education'),'Education'],[_('Applications » Games'),'Game'],[_('Applications » Graphics'),'Graphics'],[_('Applications » Internet'),'Network'],[_('Applications » Office'),'Office'],[_('Applications » Programming'),'Development'],[_('Applications » Sound & Video'),'AudioVideo'],[_('System » Settings'),'Settings'],[_('Applications » System Tools'),'System'],[_('System » Administration'),'System;Settings'],[_('Applications » Others'),'Other']
+categories = ['%s » %s' % (_('Applications'), _('Accessories')),'Utility'],['%s » %s' % (_('Applications'), _('Education')),'Education'],['%s » %s' % (_('Applications'), _('Games')),'Game'],['%s » %s' % (_('Applications'), _('Graphics')),'Graphics'],['%s » %s' % (_('Applications'), _('Internet')),'Network'],['%s » %s' % (_('Applications'), _('Office')),'Office'],['%s » %s' % (_('Applications'), _('Programming')),'Development'],['%s » %s' % (_('Applications'), _('Sound & Video')),'AudioVideo'],['%s » %s' % (_('System'), _('Settings')),'Settings'],['%s » %s' % (_('Applications'), _('System Tools')),'System'],['%s » %s' % (_('System'), _('Administration')),'System;Settings'],['%s » %s' % (_('Applications'), _('Others')),'Other']
 
 class SearchApp:
 	def __init__(self):
@@ -57,7 +57,7 @@ class SearchApp:
 						selez.append('I|' + self.apps[x])
 					x += 1
 				x = 0
-				while x < len(self.appold):
+				while x < len(self.appsold):
 					nm = ''.join(self.apps)
 					if nm.find(self.appsold[x]) == -1:
 						selez.append('E|' + self.appsold[x])

@@ -1,2 +1,2 @@
 #!/bin/bash
-xgettext --language=Python --keyword=_ --output=po/tuquito-wia.pot usr/lib/tuquito/tuquito-wia/tuquito-wia.py
+xgettext --language=Python --from-code=utf-8 --keyword=_ --output=po/tuquito-wia.pot usr/lib/tuquito/tuquito-wia/tuquito-wia.py

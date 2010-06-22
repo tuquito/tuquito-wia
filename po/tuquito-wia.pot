@@ -1,67 +1,75 @@
-# Traducciones de tuquito-wia
-# Copyright (C) 2010 Tuquito Team!
-# This file is distributed under the same license as the tuquito-wia package.
-# Mario Colque <mario@tuquito.org.ar>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Tuquito wia 1.2\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-31 18:41-0300\n"
+"POT-Creation-Date: 2010-06-22 19:01-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » Accessories"
+msgid "Applications"
 msgstr ""
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » Education"
+msgid "Accessories"
 msgstr ""
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » Games"
+msgid "Education"
 msgstr ""
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » Graphics"
+msgid "Games"
 msgstr ""
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » Internet"
+msgid "Graphics"
 msgstr ""
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » Office"
+msgid "Internet"
 msgstr ""
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » Programming"
+msgid "Office"
 msgstr ""
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » Sound & Video"
+msgid "Programming"
 msgstr ""
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "System » Settings"
+msgid "Sound & Video"
 msgstr ""
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » System Tools"
+msgid "System"
 msgstr ""
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "System » Administration"
+msgid "Settings"
 msgstr ""
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » Others"
+msgid "System Tools"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
+msgid "Administration"
+msgstr ""
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
+msgid "Others"
 msgstr ""
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:76

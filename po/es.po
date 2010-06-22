@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tuquito wia 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-31 18:41-0300\n"
+"POT-Creation-Date: 2010-06-22 19:01-0300\n"
 "PO-Revision-Date: 2010-06-14 13:10-0300\n"
 "Last-Translator: Mario Colque <mario@tuquito.org.ar>\n"
 "Language-Team: Spanish\n"
@@ -17,56 +17,64 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » Accessories"
-msgstr "Aplicaciones » Accesorios"
+msgid "Applications"
+msgstr "Aplicaciones"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » Education"
-msgstr "Aplicaciones » Educación"
+msgid "Accessories"
+msgstr "Accesorios"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » Games"
-msgstr "Aplicaciones » Juegos"
+msgid "Education"
+msgstr "Educación"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » Graphics"
-msgstr "Aplicaciones » Gráficos"
+msgid "Games"
+msgstr "Juegos"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » Internet"
-msgstr "Aplicaciones » Internet"
+msgid "Graphics"
+msgstr "Gráficos"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » Office"
-msgstr "Aplicaciones » Oficina"
+msgid "Internet"
+msgstr ""
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » Programming"
-msgstr "Aplicaciones » Programación"
+msgid "Office"
+msgstr "Oficina"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » Sound & Video"
-msgstr "Aplicaciones » Sonido y vídeo"
+msgid "Programming"
+msgstr "Programación"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "System » Settings"
-msgstr "Sistema » Preferencias"
+msgid "Sound & Video"
+msgstr "Sonido y vídeo"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » System Tools"
-msgstr "Aplicaciones » Herramientas"
+msgid "System"
+msgstr "Sistema"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "System » Administration"
-msgstr "Sistema » Administración"
+msgid "Settings"
+msgstr "Preferencias"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
-msgid "Applications » Others"
-msgstr "Aplicaciones » Otros"
+msgid "System Tools"
+msgstr "Herramientas"
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
+msgid "Administration"
+msgstr "Administración"
+
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
+msgid "Others"
+msgstr "Otros"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:76
 msgid "New Installed Application"
-msgstr "Nueva Aplicación Instalada"
+msgstr "Nueva aplicación instalada"
 
 #: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:107
 msgid "This new application can be found at:"

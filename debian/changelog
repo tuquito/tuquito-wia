@@ -1,3 +1,9 @@
+tuquito-wia (1.2-4.1) lucid; urgency=low
+
+  * Corrección en traducciones
+
+ -- Mario Colque <mario@tuquito.org.ar>  Tue, 22 Jun 2010 19:12:01 -0300
+
 tuquito-wia (1.2-4) lucid; urgency=low
 
   * correccion en directorios po
