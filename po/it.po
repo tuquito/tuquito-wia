@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tuquito wia 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-22 19:01-0300\n"
+"POT-Creation-Date: 2010-09-13 00:29-0300\n"
 "PO-Revision-Date: 2010-06-14 13:15-0300\n"
 "Last-Translator: Mario Colque <mario@tuquito.org.ar>\n"
 "Language-Team: Italian\n"
@@ -16,95 +16,74 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:41
 msgid "Applications"
 msgstr "Applicazioni"
 
-#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:41
 msgid "Accessories"
 msgstr "Accessori"
 
-#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:41
 msgid "Education"
 msgstr "Istruzione"
 
-#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:41
 msgid "Games"
 msgstr "Giochi"
 
-#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:41
 msgid "Graphics"
 msgstr "Grafica"
 
-#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:41
 msgid "Internet"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:41
 msgid "Office"
 msgstr ""
 
-#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:41
 msgid "Programming"
 msgstr "Programmazione"
 
-#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:41
 msgid "Sound & Video"
 msgstr "Audio e video"
 
-#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:41
 msgid "System"
 msgstr "Sistema"
 
-#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:41
 msgid "Settings"
 msgstr "Preferenze"
 
-#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:41
 msgid "System Tools"
 msgstr "Strumenti di sistema"
 
-#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:41
 msgid "Administration"
 msgstr "Amministrazione"
 
-#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:37
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:41
 msgid "Others"
 msgstr "Altre"
 
-#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:76
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:80
 msgid "New Installed Application"
 msgstr "Nuova applicazione installata"
 
-#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:107
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:111
 msgid "This new application can be found at:"
 msgstr "Puoi trovare l'applicazione installata in:"
 
-#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:110
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:114
 msgid "Apps deleted found"
 msgstr "Applicazione rimossa"
 
-#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:110
+#: usr/lib/tuquito/tuquito-wia/tuquito-wia.py:114
 msgid "Tuquito confirm that application was deleted"
 msgstr "Tuquito conferma la rimozione del software"
-
-#~ msgid "Applications » Accessories"
-#~ msgstr "Applicazioni » Accessori"
-
-#~ msgid "Applications » Education"
-#~ msgstr "Applicazioni » Istruzione"
-
-#~ msgid "Applications » Graphics"
-#~ msgstr "Applicazioni » Grafica"
-
-#~ msgid "Applications » Internet"
-#~ msgstr "Applicazioni » Internet"
-
-#~ msgid "Applications » Office"
-#~ msgstr "Applicazioni » Office"
-
-#~ msgid "Applications » Programming"
-#~ msgstr "Applicazioni » Programmazione"
-
-#~ msgid "Applications » Others"
-#~ msgstr "Applicazioni » Altre"
