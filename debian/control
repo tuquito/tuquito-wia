@@ -7,7 +7,7 @@ Standards-Version: 3.8.1
 
 Package: tuquito-wia
 Architecture: all
-Depends: python (>> 2.3.7), python-gtk2 (>= 2.0), python-notify (>= 0.1.1), python-pygame (>= 1.8.1)
+Depends: python-notify
 Description: Tuquito Wia (Where is application)
- Aplicación que notifica toda instalación y desinstalación de aplicaciones en GNOME.
+ Aplicación que notifica toda instalación y desinstalación de aplicaciones.
  *Tuquito Team! - 2010
