@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
- Tuquito WIA 1.2
+ Tuquito WIA 1.3
  Copyright (C) 2010
  Basado en WIA de Palumbo Roberto <palumborobertomail@gmail.com>
  Author: Mario Colque <mario@tuquito.org.ar>
@@ -20,7 +20,11 @@
  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 """
 
-import pygame, os, time, pynotify, gettext
+import os, time, pynotify, gettext, commands
+
+a = commands.getoutput('ps -A | grep tuquito-wia.py | wc -l')
+if a == '1':
+	exit(0)
 
 # i18n
 gettext.install('tuquito-wia', '/usr/share/tuquito/locale')
@@ -29,7 +33,7 @@ gettext.install('tuquito-wia', '/usr/share/tuquito/locale')
 if not pynotify.init ('TUQUITO-WIA-Notify'):
 	exit(1)
 
-#-Variables
+# Variables
 lang = os.environ['LANG'][:5]
 lang2 = lang[:2]
 icontype = ['.xpm','.png','.svg']
@@ -108,8 +112,7 @@ class SearchApp:
 
 			if frase[0] == 'E':
 				notify(_('Apps deleted found'), _('Tuquito confirm that application was deleted'), '/usr/lib/tuquito/tuquito-wia/wia-remove.png')
-
-			pygame.mixer.music.play()
+			os.system('aplay /usr/lib/tuquito/tuquito-wia/wia.wav &')
 
 class Tempo:
 	def get_time(self):
@@ -138,8 +141,6 @@ def main_loop():
 			if os.path.exists('/usr/share/applications/kde') == True:
 				three.searchIn('/usr/share/applications/kde/')
 
-pygame.init()
-pygame.mixer.music.load('/usr/share/sounds/wia.wav')
 one = SearchApp()
 two = SearchApp()
 three = SearchApp()
