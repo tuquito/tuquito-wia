@@ -1,3 +1,9 @@
+tuquito-wia (1.3-1) maverick; urgency=low
+
+  * new launcher
+
+ -- Mario Colque <mario@tuquito.org.ar>  Tue, 12 Oct 2010 20:41:18 -0300
+
 tuquito-wia (1.3) maverick; urgency=low
 
   * renamed to maverick
