@@ -1,2 +1,3 @@
 #!/bin/sh
-/usr/lib/tuquito/tuquito-wia/tuquito-wia.py
+/usr/lib/tuquito/tuquito-wia/tuquito-wia.py &
+exit 0

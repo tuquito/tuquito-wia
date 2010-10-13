@@ -20,11 +20,27 @@
  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 """
 
-import os, time, pynotify, gettext, commands
+import os
+import gtk
+import time
+import pynotify
+import gettext
+import commands
+import threading
 
-a = commands.getoutput('ps -A | grep tuquito-wia.py | wc -l')
-if a == '1':
+a = commands.getoutput('ps -A | grep tuquitoWia | wc -l')
+if a >= '1':
 	exit(0)
+
+architecture = commands.getoutput('uname -a')
+if architecture.find('x86_64') >= 0:
+	import ctypes
+	libc = ctypes.CDLL('libc.so.6')
+	libc.prctl(15, 'tuquitoWia', 0, 0, 0)
+else:
+	import dl
+	libc = dl.open('/lib/libc.so.6')
+	libc.call('prctl', 15, 'tuquitoWia', 0, 0, 0)
 
 # i18n
 gettext.install('tuquito-wia', '/usr/share/tuquito/locale')
@@ -36,42 +52,46 @@ if not pynotify.init ('TUQUITO-WIA-Notify'):
 # Variables
 lang = os.environ['LANG'][:5]
 lang2 = lang[:2]
+apps = []
+appsold = []
 icontype = ['.xpm','.png','.svg']
 icondir = ['', '/usr/share/pixmaps/','/usr/share/icons/','/usr/share/icons/hicolor/scalable/apps/','/usr/share/icons/hicolor/48x48/apps/','/usr/share/icons/hicolor/22x22/apps/','/usr/share/icons/hicolor/32x32/apps/','/usr/share/icons/hicolor/16x16/apps/','/usr/share/app-install/icons/']
 categories = ['%s » %s' % (_('Applications'), _('Accessories')),'Utility'],['%s » %s' % (_('Applications'), _('Education')),'Education'],['%s » %s' % (_('Applications'), _('Games')),'Game'],['%s » %s' % (_('Applications'), _('Graphics')),'Graphics'],['%s » %s' % (_('Applications'), _('Internet')),'Network'],['%s » %s' % (_('Applications'), _('Office')),'Office'],['%s » %s' % (_('Applications'), _('Programming')),'Development'],['%s » %s' % (_('Applications'), _('Sound & Video')),'AudioVideo'],['%s » %s' % (_('System'), _('Settings')),'Settings'],['%s » %s' % (_('Applications'), _('System Tools')),'System'],['%s » %s' % (_('System'), _('Administration')),'System;Settings'],['%s » %s' % (_('Applications'), _('Others')),'Other']
 
-class SearchApp:
-	def __init__(self):
-		self.apps = []
-		self.appsold = []
+gtk.gdk.threads_init()
 
-	def searchIn(self, path):
-		global icondir, icontype, categories
-		for filename in os.listdir(path):
-			if os.path.isfile(path + filename):
-				self.apps.append(str(path + filename))
+class SearchApp(threading.Thread):
+	def __init__(self, path):
+		threading.Thread.__init__(self)
+		self.path = path
+
+	def run(self):
+		global apps, appsold
+		for filename in os.listdir(self.path):
+			if os.path.isfile(self.path + filename):
+				apps.append(str(self.path + filename))
 		selez = []
 
-		if len(self.apps) != len(self.appsold):
-			if len(self.appsold) > 0:
+		if len(apps) != len(appsold):
+			if len(appsold) > 0:
 				x = 0
-				while x < len(self.apps):
-					nm = ''.join(self.appsold)
-					if nm.find(self.apps[x]) == -1:
-						selez.append('I|' + self.apps[x])
+				while x < len(apps):
+					nm = ''.join(appsold)
+					if nm.find(apps[x]) == -1:
+						selez.append('I|' + apps[x])
 					x += 1
 				x = 0
-				while x < len(self.appsold):
-					nm = ''.join(self.apps)
-					if nm.find(self.appsold[x]) == -1:
-						selez.append('E|' + self.appsold[x])
+				while x < len(appsold):
+					nm = ''.join(apps)
+					if nm.find(appsold[x]) == -1:
+						selez.append('E|' + appsold[x])
 					x += 1
-		self.appsold = []
-		self.apps = []
+		appsold = []
+		apps = []
 
-		for filename in os.listdir(path):
-			if os.path.isfile(path + filename):
-				self.appsold.append(str(path + filename))
+		for filename in os.listdir(self.path):
+			if os.path.isfile(self.path + filename):
+				appsold.append(str(self.path + filename))
 		for sele in selez:
 			frase = sele.split('|')
 			sel = frase[1]
@@ -112,37 +132,30 @@ class SearchApp:
 
 			if frase[0] == 'E':
 				notify(_('Apps deleted found'), _('Tuquito confirm that application was deleted'), '/usr/lib/tuquito/tuquito-wia/wia-remove.png')
-			os.system('aplay /usr/lib/tuquito/tuquito-wia/wia.wav &')
+			os.system('aplay -q /usr/lib/tuquito/tuquito-wia/wia.wav &')
+		autoRefresh = AutomaticRefreshThread(self.path)
+		autoRefresh.start()
 
-class Tempo:
-	def get_time(self):
-		return self.time
-
-	def __init__(self):
-		self.time = 0
+class AutomaticRefreshThread(threading.Thread):
+	def __init__(self, path):
+		threading.Thread.__init__(self)
+		self.path = path
 
 	def run(self):
-		self.time += 1
-		if self.time > 50:
-			self.time = 0
-		time.sleep(0.1)
+		time.sleep(2)
+		refresh = SearchApp(self.path)
+		refresh.start()
 
 def notify(top, sub, image):
 	n = pynotify.Notification(top, sub, image)
 	n.show()
 
-def main_loop():
-	while True:
-		tm.run()
-		if tm.get_time() == 9:
-			one.searchIn('/usr/share/applications/')
-			if os.path.exists('/usr/share/applications/kde4') == True:
-				two.searchIn('/usr/share/applications/kde4/')
-			if os.path.exists('/usr/share/applications/kde') == True:
-				three.searchIn('/usr/share/applications/kde/')
-
-one = SearchApp()
-two = SearchApp()
-three = SearchApp()
-tm = Tempo()
-main_loop()
+#start
+searchApp = SearchApp('/usr/share/applications/')
+searchApp.start()
+if os.path.exists('/usr/share/applications/kde4'):
+	two.searchIn('/usr/share/applications/kde4/')
+	two.start()
+if os.path.exists('/usr/share/applications/kde'):
+	three.searchIn('/usr/share/applications/kde/')
+	three.start()
