@@ -10,4 +10,3 @@ Architecture: all
 Depends: python-notify
 Description: Tuquito Wia (Where is application)
  Aplicación que notifica toda instalación y desinstalación de aplicaciones.
- *Tuquito Team! - 2010
