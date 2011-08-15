@@ -2,6 +2,6 @@
 Name=Where is Application?
 Comment=Notifica en que menú se encuentra una nueva aplicación instalada
 Type=Application
-Exec=/usr/lib/tuquito/tuquito-wia/tuquito-wia.py
+Exec=python /usr/lib/tuquito/tuquito-wia/tuquito-wia.py
 Terminal=false
 Categories=Utility;
