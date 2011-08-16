@@ -22,8 +22,8 @@
 
 import os, time, pynotify, gettext, commands
 
-a = commands.getoutput('ps -A | grep tuquito-wia.py | wc -l')
-if a == '1':
+a = commands.getoutput('ps -A | grep tuquito-wia | wc -l')
+if a > '1':
 	exit(0)
 
 # i18n
